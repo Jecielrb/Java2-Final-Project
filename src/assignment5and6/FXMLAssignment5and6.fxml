@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment5and6.FXMLAssignment5and6Controller">
+    <stylesheets>
+        <URL value="@fxmlassignment5and6.css"/>
+    </stylesheets>
+    
+    <children>
+        <SplitPane id="SplitPane">
+            <items>
+                <FlowPane orientation="VERTICAL" id="flowPane" >
+                    
+                    <Label text="Destination: " id="text"  />
+                    <TextField fx:id="destination" />
+
+                    <Label text="Days of Stay: " id="text"  />
+                    <TextField fx:id="duration" />
+
+                    <Label text="Went with: " id="text"  />
+                    <TextField fx:id="wentwith" />
+
+                    <Label text="Year: " id="text"  />
+                    <TextField fx:id="year" />
+            
+                    <Label text="Comments: " id="text"  />
+                    <TextField fx:id="comments" />
+                    
+                    <HBox spacing="8" alignment="CENTER" >
+                        <Button text="Add To List" onAction="#add" id="b1"/>
+                        <Button text="Edit List" onAction="#edit" id="b1"/>
+                        <Button text="Clear Fields" onAction="#clear" id="b1"/>
+                    </HBox>
+                    <HBox spacing="8" alignment="CENTER">
+                        <Button text="Save to File" onAction="#save" id="b2" />
+                        <Button text="Open List" fx:id="open" onAction="#open" id="b2"/>
+                        <Button text="Next" onAction="#next" id="b2"/>
+                    </HBox>
+                    <HBox spacing="8" alignment="CENTER">
+                        <Button text="First" onAction="#first" id="b3"/>
+                        <Button text="Previous" onAction="#previous" id="b3"/>
+                        <Button text="Last" onAction="#last" id="b3"/>
+                    </HBox>
+                    <HBox spacing="8" alignment="CENTER">
+                    <Button text="Delete List" onAction="#delete" id="b4"/>
+                    </HBox>
+                    
+                </FlowPane>
+            </items>
+            <items >
+                <ListView fx:id="lstDestinationList" id="listView"/>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

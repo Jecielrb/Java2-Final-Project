@@ -1,0 +1,37 @@
+/*
+ * CSS for Assignment 5 and 6 UI
+ */
+
+#AnchorPane{
+    -fx-background-color: black;
+}
+#SplitPane{
+    -fx-background-color: red; /* just to create a border color */
+}
+#flowPane{
+    -fx-background-color: yellow;
+}
+#b1{
+    -fx-background-color: pink;
+    -fx-text-fill: white;
+}
+#b2{
+    -fx-background-color: aquamarine;
+    -fx-text-fill: white;
+}
+#b3{
+    -fx-background-color: darkolivegreen;
+    -fx-text-fill: white;
+}
+#b4{
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+#text{
+    -fx-text-fill: blue;
+}
+#listView{
+    -fx-background-color: aquamarine;
+    -fx-text-fill: white;
+}
+

@@ -1,0 +1,11 @@
+/*
+ * CSS for Assignment 5 and 6 Menu
+ */
+
+#AnchorPane {
+    -fx-background-color: cyan;
+}
+#menu{
+    -fx-background-color: pink;
+    -fx-text-fill: white;
+}
